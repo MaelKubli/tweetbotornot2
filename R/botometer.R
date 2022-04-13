@@ -1,5 +1,3 @@
-
-
 #' Botometer scores
 #'
 #' Get Botometer scores for given user(s)
@@ -8,7 +6,7 @@
 #' @param token rtweet token. If NULL (default), then rtweet looks for a token
 #'   path in .Renviron
 #' @param key Botometer API key, which you should be able to get from:
-#'    https://rapidapi.com/OSoMe/api/botometer-pro
+#'   https://rapidapi.com/OSoMe/api/botometer-pro
 #' @param set_key Logical indicating whether to set the botometer key as an
 #'   R environment variable for current future sessions (on the same machine).
 #' @param parse Logical indicating whether to parse return information. If TRUE
@@ -198,8 +196,8 @@ botometer_key <- function(x = NULL, set_key = FALSE) {
   ## if no key is found, stop with hyperlinked message
   if (is.null(x)) {
     stop(paste0("This requires a valid 'Botometer' API key, see: ",
-      "https://rapidapi.com/OSoMe/api/botometer/details for more information"),
-      call. = FALSE)
+                "https://rapidapi.com/OSoMe/api/botometer/details for more information"),
+         call. = FALSE)
   }
 
   ## validate string basics
