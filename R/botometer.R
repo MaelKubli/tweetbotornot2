@@ -172,8 +172,8 @@ botometer_score <- function(user, token, key, parse = TRUE, user_type = NULL) {
     return(r)
   }
   ## otherwise extract score and return as data table
-  english <- httr::content(r)[["scores"]][["english"]]
-  universal <- httr::content(r)[["scores"]][["universal"]]
+  english <- httr::content(r)[["cap"]][["english"]]
+  universal <- httr::content(r)[["cap"]][["universal"]]
   if (length(english) == 0L) {
     english <- NA_real_
   }
