@@ -1,4 +1,4 @@
-#' Botometer scores
+#' Botometer scores (version 4)
 #'
 #' Get Botometer scores for given user(s)
 #'
