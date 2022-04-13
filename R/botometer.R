@@ -160,7 +160,7 @@ botometer_score <- function(user, token, key, parse = TRUE, user_type = NULL) {
   ), auto_unbox = TRUE, pretty = TRUE)
   ## send request to botometer API
   r <- httr::POST(
-    "https://botometer-pro.p.rapidapi.com/2/check_account",
+    "https://botometer-pro.p.rapidapi.com/4/check_account",
     encode = "json",
     httr::add_headers('X-RapidAPI-Host' = 'botometer-pro.p.rapidapi.com',
                       'X-Mashape-Key' = key),
